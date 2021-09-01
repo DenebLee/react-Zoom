@@ -20,6 +20,8 @@ import { usePrevious, useMount } from '../../hooks';
 import { Participant } from '../../index-types';
 import './video.scss';
 
+//하나의 canvas 에서 렌더링이라 배열을 통한 상태관리와 배열에 저장된 userId를 통해 파라미터로 제공하는 userId를 배열에 담아 죄다 같이 렌더링 시킴
+
 const VideoContainer: React.FunctionComponent<RouteComponentProps> = (props) => {
   const zmClient = useContext(ZoomContext);
   const {
