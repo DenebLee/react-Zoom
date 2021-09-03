@@ -139,3 +139,8 @@ const VideoContainer: React.FunctionComponent<RouteComponentProps> = (props) => 
 };
 
 export default VideoContainer;
+
+//싱글 비디오 component는 단순 하나의 카메라를 렌더링하는데 참가자 접속시 위에 리스트형식으로 렌더링
+//video.tsx는 참가자 접속시 흔히 보이는 줌갤러리뷰처럼 생성
+
+//canvas에서 좌표를 구해 임의로 주는형식이 아닌 canvas위에 ul태그로 생성된 각 참가자의 영역만큼의 좌표를 받아 canvas에 그 좌표그대로 렌더링 시켜주는 형식
