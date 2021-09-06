@@ -30,6 +30,7 @@ const VideoContainer: React.FunctionComponent<RouteComponentProps> = (props) => 
     zmClient,
     canvasDimension,
   );
+  // 갤러리뷰 스크립트 
   const { visibleParticipants, layout: videoLayout } = useGalleryLayout(
     zmClient,
     mediaStream,
@@ -43,6 +44,8 @@ const VideoContainer: React.FunctionComponent<RouteComponentProps> = (props) => 
       totalSize,
     },
   );
+  //화면공유 스크립트
+  //화면공유시 윈도우에 실행되는 프로그램에 토글되는 버그있음 
   const { isRecieveSharing, isStartedShare, sharedContentDimension } = useShare(
     zmClient,
     mediaStream,
